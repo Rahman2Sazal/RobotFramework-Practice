@@ -15,9 +15,3 @@ Library     OperatingSystem
 TEST
     Log     this is a sample test case   
     
-
-
-
-
-
-*** Tasks ***

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-19T15:10:59.325379" rpa="false" schemaversion="5">
+<suite id="s1" name="TryingSampleTestCase &amp; TestCase2">
+<suite id="s1-s1" name="TryingSampleTestCase" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\TryingSampleTestCase.robot">
+<test id="s1-s1-t1" name="TEST" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-19T15:10:59.378164" level="INFO">this is a sample test case</msg>
+<arg>this is a sample test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-19T15:10:59.377848" elapsed="0.000382"/>
+</kw>
+<status status="PASS" start="2026-09-19T15:10:59.376862" elapsed="0.001706"/>
+</test>
+<doc>This is my first test case</doc>
+<status status="PASS" start="2026-09-19T15:10:59.367407" elapsed="0.011962"/>
+</suite>
+<suite id="s1-s2" name="TestCase2" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\TestCase2.robot">
+<test id="s1-s2-t1" name="TEST2" line="6">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-19T15:10:59.383886" level="INFO">This is my 2nd Test case</msg>
+<arg>This is my 2nd Test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-19T15:10:59.383444" elapsed="0.000540"/>
+</kw>
+<status status="PASS" start="2026-09-19T15:10:59.382746" elapsed="0.001545"/>
+</test>
+<status status="PASS" start="2026-09-19T15:10:59.380322" elapsed="0.004874"/>
+</suite>
+<status status="PASS" start="2026-09-19T15:10:59.326901" elapsed="0.059330"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TryingSampleTestCase &amp; TestCase2" id="s1" pass="2" fail="0" skip="0">TryingSampleTestCase &amp; TestCase2</stat>
+<stat name="TryingSampleTestCase" id="s1-s1" pass="1" fail="0" skip="0">TryingSampleTestCase &amp; TestCase2.TryingSampleTestCase</stat>
+<stat name="TestCase2" id="s1-s2" pass="1" fail="0" skip="0">TryingSampleTestCase &amp; TestCase2.TestCase2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
