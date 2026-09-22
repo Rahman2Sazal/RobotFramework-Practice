@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-22T18:58:15.947175" rpa="false" schemaversion="5">
-<suite id="s1" name="TestCase2" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\TestCase2.robot">
-<test id="s1-t1" name="TEST2" line="6">
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-22T18:58:15.998486" level="INFO">This is my 2nd Test case</msg>
-<arg>This is my 2nd Test case</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-22T18:58:15.998028" elapsed="0.000558"/>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-22T20:12:58.402373" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\Login.robot">
+<test id="s1-t1" name="LoginTest" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-22T20:12:58.666989" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-22T20:12:58.666600" elapsed="2.399027"/>
 </kw>
-<status status="PASS" start="2026-09-22T18:58:15.996893" elapsed="0.002173"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-09-22T20:13:01.066980" level="INFO">Clicking link 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<msg time="2026-09-22T20:13:01.194752" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-22T20:13:01.195032" level="FAIL">Link with locator 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a' not found.</msg>
+<arg>xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-22T20:13:01.066361" elapsed="0.131768">Link with locator 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-22T20:13:01.198598" elapsed="0.000062"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-22T20:13:01.198951" elapsed="0.000045"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[6]/main/div/section/div/div[2]/div[1]/div[2]/form/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-22T20:13:01.199768" elapsed="0.000066"/>
+</kw>
+<status status="FAIL" start="2026-09-22T20:12:58.664882" elapsed="2.535430">Link with locator 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a' not found.</status>
 </test>
-<status status="PASS" start="2026-09-22T18:58:15.948780" elapsed="0.051043"/>
+<status status="FAIL" start="2026-09-22T20:12:58.403903" elapsed="2.797439"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TestCase2" id="s1" pass="1" fail="0" skip="0">TestCase2</stat>
+<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
 </suite>
 </statistics>
 <errors>

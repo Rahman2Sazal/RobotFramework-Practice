@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-20T23:07:00.586453" rpa="false" schemaversion="5">
+<suite id="s1" name="TryingVariables" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\TryingVariables.robot">
+<test id="s1-t1" name="TEST" line="13">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T23:07:00.650709" level="INFO">my test variable</msg>
+<arg>${myvariable}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T23:07:00.650314" elapsed="0.000469"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T23:07:00.651951" level="INFO">my 2nd variable</msg>
+<arg>${my2ndvariable}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T23:07:00.651373" elapsed="0.000682"/>
+</kw>
+<status status="PASS" start="2026-09-20T23:07:00.649111" elapsed="0.003319"/>
+</test>
+<status status="PASS" start="2026-09-20T23:07:00.588338" elapsed="0.065040"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TryingVariables" id="s1" pass="1" fail="0" skip="0">TryingVariables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

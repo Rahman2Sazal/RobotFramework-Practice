@@ -9,12 +9,19 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 LoginTest
-    create webdriver  executable_path= "E:\Study\Automation Robot Framework\chrome-win32\chrome-win32\chrome.exe"
-    open browser https://demo.nopcommerce.com/  chrome  
+    
+   
+    Open Browser    https://demo.nopcommerce.com/    chrome    
+    Click Link    xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a
+    Input Text    id:Email    pavanoltraining@gmail.com
+    Input Text    id:Password    Test@123
+    Click Element    xpath:/html/body/div[6]/main/div/section/div/div[2]/div[1]/div[2]/form/div[2]/button
+
+
 
 
                                                                  
 *** Keywords ***
-    LoginTest   
+ 
 
 
