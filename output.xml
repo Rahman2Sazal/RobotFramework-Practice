@@ -1,51 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-22T20:12:58.402373" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\Login.robot">
-<test id="s1-t1" name="LoginTest" line="11">
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-23T07:52:42.146105" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\login.robot">
+<test id="s1-t1" name="LoginTest" line="13">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-09-22T20:12:58.666989" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
-<arg>https://demo.nopcommerce.com/</arg>
+<msg time="2026-09-23T07:52:42.403825" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-09-22T20:12:58.666600" elapsed="2.399027"/>
+<status status="PASS" start="2026-09-23T07:52:42.403475" elapsed="2.652073"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-09-22T20:13:01.066980" level="INFO">Clicking link 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
-<msg time="2026-09-22T20:13:01.194752" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-09-22T20:13:01.195032" level="FAIL">Link with locator 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a' not found.</msg>
-<arg>xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="FAIL" start="2026-09-22T20:13:01.066361" elapsed="0.131768">Link with locator 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a' not found.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T07:52:55.057112" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T07:52:45.056362" elapsed="10.000917"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>pavanoltraining@gmail.com</arg>
+<msg time="2026-09-23T07:52:55.058456" level="INFO">Typing text 'Admin' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
+<arg>Admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-09-22T20:13:01.198598" elapsed="0.000062"/>
+<status status="PASS" start="2026-09-23T07:52:55.057714" elapsed="0.097309"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>Test@123</arg>
+<msg time="2026-09-23T07:52:55.155790" level="INFO">Typing text 'admin123' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input</arg>
+<arg>admin123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-09-22T20:13:01.198951" elapsed="0.000045"/>
+<status status="PASS" start="2026-09-23T07:52:55.155529" elapsed="0.098772"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T07:53:00.255753" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T07:52:55.254806" elapsed="5.001051"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath:/html/body/div[6]/main/div/section/div/div[2]/div[1]/div[2]/form/div[2]/button</arg>
+<msg time="2026-09-23T07:53:00.256313" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-09-22T20:13:01.199768" elapsed="0.000066"/>
+<status status="PASS" start="2026-09-23T07:53:00.256116" elapsed="0.063543"/>
 </kw>
-<status status="FAIL" start="2026-09-22T20:12:58.664882" elapsed="2.535430">Link with locator 'xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a' not found.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T07:53:05.320669" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T07:53:00.320034" elapsed="5.000730"/>
+</kw>
+<status status="PASS" start="2026-09-23T07:52:42.402037" elapsed="22.918942"/>
 </test>
-<status status="FAIL" start="2026-09-22T20:12:58.403903" elapsed="2.797439"/>
+<status status="PASS" start="2026-09-23T07:52:42.147526" elapsed="23.173893"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
 </suite>
 </statistics>
 <errors>

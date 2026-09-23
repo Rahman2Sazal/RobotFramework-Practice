@@ -7,16 +7,17 @@ Library    SeleniumLibrary
 *** Variables ***
 
 
+
+
 *** Test Cases ***
 LoginTest
-    
-   
-    Open Browser    https://demo.nopcommerce.com/    chrome    
-    Click Link    xpath:/html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[2]/a
-    Input Text    id:Email    pavanoltraining@gmail.com
-    Input Text    id:Password    Test@123
-    Click Element    xpath:/html/body/div[6]/main/div/section/div/div[2]/div[1]/div[2]/form/div[2]/button
-
+    Open Browser    https://opensource-demo.orangehrmlive.com/web/index.php/auth/login    chrome    
+    Sleep    10s
+    Input Text    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input    Admin
+    Input Text    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input    admin123
+    Sleep   5s
+    Click Element    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button
+    Sleep    5s
 
 
 
