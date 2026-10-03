@@ -2,6 +2,7 @@
 
 Documentation    This is my first test case
 Library     OperatingSystem
+Library    SeleniumLibrary  
 
 
 *** Keywords ***
