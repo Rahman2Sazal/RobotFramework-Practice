@@ -1,58 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-23T08:04:48.114544" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\login.robot">
-<test id="s1-t1" name="LoginTest" line="14">
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-03T21:45:32.139043" rpa="false" schemaversion="5">
+<suite id="s1" name="MouseOperation" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\MouseOperation.robot">
+<test id="s1-t1" name="MouseActions" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-09-23T08:04:48.397838" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2026-10-03T21:45:32.407744" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-09-23T08:04:48.397569" elapsed="5.965240"/>
+<status status="PASS" start="2026-10-03T21:45:32.407330" elapsed="1.154798"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-03T21:45:33.562711" elapsed="0.043854"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-09-23T08:05:04.364289" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
+<msg time="2026-10-03T21:45:36.608413" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses execution for the given time.</doc>
-<status status="PASS" start="2026-09-23T08:04:54.363356" elapsed="10.001103"/>
+<status status="PASS" start="2026-10-03T21:45:33.607209" elapsed="3.001415"/>
 </kw>
-<kw name="LogInToApplication">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-23T08:05:04.365605" level="INFO">Typing text 'Admin' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
-<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
-<arg>Admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-23T08:05:04.365307" elapsed="0.082523"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-23T08:05:04.448422" level="INFO">Typing text 'admin123' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
-<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input</arg>
-<arg>admin123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-23T08:05:04.448077" elapsed="0.073449"/>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath=/html/body/main/p/span</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-03T21:45:36.609004" elapsed="0.288065"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-09-23T08:05:09.522534" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2026-10-03T21:45:39.898519" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses execution for the given time.</doc>
-<status status="PASS" start="2026-09-23T08:05:04.521702" elapsed="5.000937"/>
+<status status="PASS" start="2026-10-03T21:45:36.897457" elapsed="3.001163"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-09-23T08:05:09.522997" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-23T08:05:09.522801" elapsed="0.053577"/>
-</kw>
-<status status="PASS" start="2026-09-23T08:05:04.365016" elapsed="5.211540"/>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-10-03T21:45:39.899122" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-10-03T21:45:39.898962" elapsed="1.921902"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-09-23T08:05:14.577974" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2026-10-03T21:45:44.821960" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses execution for the given time.</doc>
-<status status="PASS" start="2026-09-23T08:05:09.576969" elapsed="5.001174"/>
+<status status="PASS" start="2026-10-03T21:45:41.821283" elapsed="3.000822"/>
 </kw>
-<status status="PASS" start="2026-09-23T08:04:48.396388" elapsed="26.182191"/>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-03T21:45:44.822705" level="INFO">Double clicking element 'xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button'.</msg>
+<arg>xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-03T21:45:44.822465" elapsed="0.301667"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[8]/div[1]/div[1]/p</arg>
+<arg>//*[@id="droppable"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-10-03T21:45:45.124578" elapsed="0.597071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-03T21:45:48.723516" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-03T21:45:45.722545" elapsed="3.001163"/>
+</kw>
+<status status="PASS" start="2026-10-03T21:45:32.405793" elapsed="16.318413"/>
 </test>
-<status status="PASS" start="2026-09-23T08:04:48.115947" elapsed="26.463433"/>
+<status status="PASS" start="2026-10-03T21:45:32.145137" elapsed="16.580288"/>
 </suite>
 <statistics>
 <total>
@@ -61,7 +71,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+<stat name="MouseOperation" id="s1" pass="1" fail="0" skip="0">MouseOperation</stat>
 </suite>
 </statistics>
 <errors>
