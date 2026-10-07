@@ -1,88 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-03T23:04:46.410527" rpa="false" schemaversion="5">
-<suite id="s1" name="UsingKeywords" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\UsingKeywords.robot">
-<test id="s1-t1" name="LaunchBrowser" line="13">
-<kw name="LaunchBrowser" owner="Keywords">
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-07T17:42:47.018174" rpa="false" schemaversion="5">
+<suite id="s1" name="Scrolling" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\Scrolling.robot">
+<test id="s1-t1" name="ScrollingTest" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-10-03T23:04:46.678263" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<arg>${appurl}</arg>
-<arg>${appbrowser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-10-03T23:04:46.677956" elapsed="2.195873"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath://html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-10-03T23:04:48.874164" elapsed="0.248909"/>
-</kw>
+<msg time="2026-10-07T17:42:47.386662" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2026-10-03T23:04:46.676924" elapsed="2.446332"/>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-07T17:42:47.386307" elapsed="2.694996"/>
 </kw>
-<status status="PASS" start="2026-10-03T23:04:46.676330" elapsed="2.447348"/>
-</test>
-<test id="s1-t2" name="InputingText" line="16">
-<kw name="InputingText" owner="Keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-10-03T23:04:49.126070" level="INFO">Typing text 'Admin' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
-<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
-<arg>Admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-10-03T23:04:49.125824" elapsed="0.097318"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-10-03T23:04:49.223851" level="INFO">Typing text 'admin123' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
-<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input</arg>
-<arg>admin123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-10-03T23:04:49.223453" elapsed="0.087398"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-10-03T23:04:49.311529" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-10-03T23:04:49.311176" elapsed="0.053563"/>
-</kw>
-<kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2026-10-03T23:04:50.084114" level="INFO">${title} = OrangeHRM</msg>
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-10-03T23:04:49.365026" elapsed="0.719162"/>
-</kw>
-<return>
-<value>${title}</value>
-<status status="PASS" start="2026-10-03T23:04:50.084299" elapsed="0.000091"/>
-</return>
-<msg time="2026-10-03T23:04:50.084609" level="INFO">${PageTitle} = OrangeHRM</msg>
-<var>${PageTitle}</var>
-<status status="PASS" start="2026-10-03T23:04:49.125308" elapsed="0.959340"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${PageTitle}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-03T23:04:50.085011" elapsed="0.000634"/>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-10-07T17:42:50.082916" level="INFO">Executing JavaScript:
+window.scrollTo(0,1500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,1500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-10-07T17:42:50.082387" elapsed="0.013635"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-10-03T23:04:55.086842" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2026-10-07T17:42:52.097512" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses execution for the given time.</doc>
-<status status="PASS" start="2026-10-03T23:04:50.085964" elapsed="5.000981"/>
+<status status="PASS" start="2026-10-07T17:42:50.096643" elapsed="2.001027"/>
 </kw>
-<status status="PASS" start="2026-10-03T23:04:49.124451" elapsed="5.962701"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="HTML3"]/div[1]/div/button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-07T17:42:52.098073" elapsed="0.305913"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-07T17:42:54.405758" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-07T17:42:52.404484" elapsed="2.001484"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-10-07T17:42:54.406930" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-10-07T17:42:54.406584" elapsed="0.008496"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-07T17:42:56.417222" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-07T17:42:54.415646" elapsed="2.001793"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-10-07T17:42:56.418516" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-10-07T17:42:56.418162" elapsed="0.010517"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-07T17:42:58.430512" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-07T17:42:56.429320" elapsed="2.001310"/>
+</kw>
+<status status="PASS" start="2026-10-07T17:42:47.384899" elapsed="11.046152"/>
 </test>
-<status status="PASS" start="2026-10-03T23:04:46.412216" elapsed="8.675289"/>
+<status status="PASS" start="2026-10-07T17:42:47.019903" elapsed="11.411825"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="UsingKeywords" id="s1" pass="2" fail="0" skip="0">UsingKeywords</stat>
+<stat name="Scrolling" id="s1" pass="1" fail="0" skip="0">Scrolling</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-10-03T23:04:46.674478" level="WARN">Error in file 'C:\Users\Administrator\PycharmProjects\RobotPractice\Resources\Keywords.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
