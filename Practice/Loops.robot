@@ -20,7 +20,7 @@ ForLoopWithList
 
 ForLoopWithText
         FOR     ${i}    IN      MYNAME     MD  MAHFUZUR    RAHMAN
-        Log To Console  ${i}
+        Log To Console  ${i} 
         END   
 For Loop With Name List
         @{Item}     Create List     MAHFUZUR    RAHMAN
