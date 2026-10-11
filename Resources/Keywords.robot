@@ -16,7 +16,8 @@ LaunchBrowser
 
 InputingText
     Input Text    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input   Admin
-    Input Text    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input    admin123
+    Input Text    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input    admin546
+    Text should show "
     Click Element    xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button 
     ${title}=   get title
     [Return]     ${title}
