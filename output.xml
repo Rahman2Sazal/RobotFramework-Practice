@@ -1,98 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-21T14:46:48.486173" rpa="false" schemaversion="5">
-<suite id="s1" name="SetupAndTeardown" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\SetupAndTeardown.robot">
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-21T15:23:13.352258" rpa="false" schemaversion="5">
+<suite id="s1" name="Tagging" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\Tagging.robot">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>Launch Browser</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.526528" elapsed="0.000478"/>
+<status status="PASS" start="2026-10-21T15:23:13.388061" elapsed="0.000435"/>
 </kw>
-<test id="s1-t1" name="TC1 Prepaid ReCharge" line="11">
+<test id="s1-t1" name="TC1 User Registration Test" line="10">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>Log in to application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.527637" elapsed="0.000408"/>
+<status status="PASS" start="2026-10-21T15:23:13.389030" elapsed="0.000334"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>This is prepaid recharge test case</arg>
+<arg>This is user reg testT</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.528352" elapsed="0.000382"/>
+<status status="PASS" start="2026-10-21T15:23:13.389571" elapsed="0.000278"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>User reg test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-10-21T15:23:13.390015" elapsed="0.000258"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>Log out form application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.529056" elapsed="0.000364"/>
+<status status="PASS" start="2026-10-21T15:23:13.390495" elapsed="0.000404"/>
 </kw>
-<status status="PASS" start="2026-10-21T14:46:48.527139" elapsed="0.002422"/>
+<tag>Sanity</tag>
+<status status="PASS" start="2026-10-21T15:23:13.388628" elapsed="0.002440"/>
 </test>
-<test id="s1-t2" name="TC2 Postpaid ReCharge" line="14">
+<test id="s1-t2" name="TC2 LoginTest" line="15">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>Log in to application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.530451" elapsed="0.002075"/>
+<status status="PASS" start="2026-10-21T15:23:13.392029" elapsed="0.000356"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>This is postpaid recharge test case</arg>
+<arg>This is login test</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.532813" elapsed="0.000481"/>
+<status status="PASS" start="2026-10-21T15:23:13.392571" elapsed="0.000239"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login Test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-10-21T15:23:13.392937" elapsed="0.000259"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>Log out form application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.533630" elapsed="0.000331"/>
+<status status="PASS" start="2026-10-21T15:23:13.393398" elapsed="0.000209"/>
 </kw>
-<status status="PASS" start="2026-10-21T14:46:48.530037" elapsed="0.004005"/>
+<tag>regression</tag>
+<status status="PASS" start="2026-10-21T15:23:13.391599" elapsed="0.002076"/>
 </test>
-<test id="s1-t3" name="TC3 Search" line="17">
+<test id="s1-t3" name="TC3 Chage User setting" line="20">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>Log in to application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.534655" elapsed="0.000302"/>
+<status status="PASS" start="2026-10-21T15:23:13.394372" elapsed="0.000211"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>This is search test case</arg>
+<arg>This is user changing test case</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.535103" elapsed="0.000297"/>
+<status status="PASS" start="2026-10-21T15:23:13.394714" elapsed="0.000214"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Changing user test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-10-21T15:23:13.395049" elapsed="0.000194"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>Log out form application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.535680" elapsed="0.000448"/>
+<status status="PASS" start="2026-10-21T15:23:13.395408" elapsed="0.000185"/>
 </kw>
-<status status="PASS" start="2026-10-21T14:46:48.534307" elapsed="0.001979"/>
+<tag>Regression</tag>
+<status status="PASS" start="2026-10-21T15:23:13.394027" elapsed="0.001629"/>
 </test>
-<test id="s1-t4" name="TC4 Advanced Search" line="20">
+<test id="s1-t4" name="TC4 Logout Test" line="25">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>Log in to application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.537118" elapsed="0.000397"/>
+<status status="PASS" start="2026-10-21T15:23:13.396275" elapsed="0.000301"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>This is advanced search test case</arg>
+<arg>This is logout test</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.537689" elapsed="0.000237"/>
+<status status="PASS" start="2026-10-21T15:23:13.396815" elapsed="0.000356"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logout test is finished</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-10-21T15:23:13.397365" elapsed="0.000240"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>Log out form application</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.538130" elapsed="0.000286"/>
+<status status="PASS" start="2026-10-21T15:23:13.397822" elapsed="0.000307"/>
 </kw>
-<status status="PASS" start="2026-10-21T14:46:48.536685" elapsed="0.001916"/>
+<tag>Sanity</tag>
+<status status="PASS" start="2026-10-21T15:23:13.396001" elapsed="0.002291"/>
 </test>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>Close All Browsers</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T14:46:48.539419" elapsed="0.000459"/>
+<status status="PASS" start="2026-10-21T15:23:13.399183" elapsed="0.000454"/>
 </kw>
-<status status="PASS" start="2026-10-21T14:46:48.488279" elapsed="0.051664"/>
+<status status="PASS" start="2026-10-21T15:23:13.354167" elapsed="0.045544"/>
 </suite>
 <statistics>
 <total>
 <stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">Sanity</stat>
 </tag>
 <suite>
-<stat name="SetupAndTeardown" id="s1" pass="4" fail="0" skip="0">SetupAndTeardown</stat>
+<stat name="Tagging" id="s1" pass="4" fail="0" skip="0">Tagging</stat>
 </suite>
 </statistics>
 <errors>
