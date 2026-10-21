@@ -1,0 +1,30 @@
+1791809430179	geckodriver	INFO	Listening on 127.0.0.1:56306
+1791809433309	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56307" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile3Bek3f"
+Dynamically enable window occlusion 0
+1791809433805	Marionette	INFO	Marionette enabled
+1791809433951	Marionette	INFO	Listening on port 56316
+WebDriver BiDi listening on ws://127.0.0.1:56307
+Read port: 56316
+1791809434165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Unspecified error" }
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Unspecified error" }
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Unspecified error" }
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Unspecified error" }
+1791809437786	RemoteAgent	WARN	PollPromise timed out after 0 ms
+1791809437820	RemoteAgent	WARN	PollPromise timed out after 0 ms
+1791809437846	RemoteAgent	WARN	PollPromise timed out after 0 ms
+1791809437880	RemoteAgent	WARN	PollPromise timed out after 0 ms
+1791809437906	RemoteAgent	WARN	PollPromise timed out after 0 ms
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Experiment private-window-visual-refresh-design-change-only has unknown featureId: feltPrivacy"
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Experiment private-window-visual-refresh-design-change-only has unknown featureId: feltPrivacy"
+[WARN  glean_core::upload] Attempted to enqueue a duplicate ping b698f4c1-80de-405d-9b75-e2408f1cb8d2 at /submit/firefox-crashreporter/deletion-request/1/b698f4c1-80de-405d-9b75-e2408f1cb8d2.
+1791809510799	Marionette	INFO	Stopped listening on port 56316
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1

@@ -3,8 +3,6 @@
 Library    SeleniumLibrary  
 
 
-
-
 *** Variables ***
 ${browser}      chrome
 ${url}          https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
@@ -12,25 +10,25 @@ ${url}          https://opensource-demo.orangehrmlive.com/web/index.php/auth/log
 
 *** Keywords ***
 Launch Browser
-    Open Browser    ${url}
+    Open Browser     ${url}      ${browser}    
     Maximize browser window
-    Wait Until Element Is Visible   xpath://html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+    Wait Until Element Is Visible   name:username
     
-Close All Browser
-    Close All Browser
+Close All Browsers
+    SeleniumLibrary.Close All Browsers
     
 Open Login Page
-    Go to       ${browser}
-    Wait Until Element Is Visible   xpath://html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+    Go to       ${url}
+    Wait Until Element Is Visible   name:username
 
 
 Input UserName
     [Arguments]     ${username}
-    input text      id:Username     ${username}
+    Input Text      name:username     ${username}
 
 Input Password
     [Arguments]     ${password}
-    input text      id:Password     ${password}
+    Input Text      name:password     ${password}
     
 Click Login Button
     click element       xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button

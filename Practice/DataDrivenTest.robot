@@ -2,9 +2,9 @@
 
 Library    SeleniumLibrary  
 Resource    ../Resources/LoginResources.robot
-Suite Setup     Open my Browser
-Suite Teardown      Close Browsers
-Test Template    Invalid login
+Suite Setup        Launch Browser
+Suite Teardown     Close All Browsers
+Test Template      Invalid Login
 
 *** Test Cases ***
 Right user empty password   admin   ${EMPTY}
@@ -18,6 +18,7 @@ Wrong user wrong password   tyuiop  dasljk
 *** Keywords ***
 Invalid Login
     [Arguments]    ${username}      ${password}
+    Open Login Page    
     Input Username      ${username}
     Input Password       ${password}
     Click login button
