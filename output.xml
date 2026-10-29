@@ -1,124 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-21T15:23:13.352258" rpa="false" schemaversion="5">
-<suite id="s1" name="Tagging" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\Tagging.robot">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>Launch Browser</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.388061" elapsed="0.000435"/>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-29T16:50:29.342621" rpa="false" schemaversion="5">
+<suite id="s1" name="POMLoginTest" source="C:\Users\Administrator\PycharmProjects\RobotPractice\Practice\POMLoginTest.robot">
+<test id="s1-t1" name="LoginTest" line="14">
+<kw name="Open My Browsers" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-29T16:50:29.634141" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${SiteURL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-29T16:50:29.633875" elapsed="4.936699"/>
 </kw>
-<test id="s1-t1" name="TC1 User Registration Test" line="10">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>Log in to application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.389030" elapsed="0.000334"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-29T16:50:34.570792" elapsed="0.028218"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>This is user reg testT</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.389571" elapsed="0.000278"/>
+<arg>${SiteURL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2026-10-29T16:50:29.632289" elapsed="4.966904"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>User reg test is over</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.390015" elapsed="0.000258"/>
+<kw name="Enter Username" owner="LoginKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-29T16:50:34.600208" elapsed="0.436970"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>Log out form application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.390495" elapsed="0.000404"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-29T16:50:35.038000" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<arg>${txt_Username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-29T16:50:35.037553" elapsed="0.086579"/>
 </kw>
-<tag>Sanity</tag>
-<status status="PASS" start="2026-10-21T15:23:13.388628" elapsed="0.002440"/>
+<arg>${username}</arg>
+<status status="PASS" start="2026-10-29T16:50:34.599713" elapsed="0.524645"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-29T16:50:35.125813" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
+<arg>${txt_Password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-29T16:50:35.125473" elapsed="0.240271"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-10-29T16:50:35.124860" elapsed="0.241141"/>
+</kw>
+<kw name="Click SignIn" owner="LoginKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-29T16:50:35.367456" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>${btn_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-29T16:50:35.367068" elapsed="0.094844"/>
+</kw>
+<status status="PASS" start="2026-10-29T16:50:35.366573" elapsed="0.095535"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-29T16:50:37.463614" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-29T16:50:35.462573" elapsed="2.001246"/>
+</kw>
+<kw name="Verify successfull login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-10-29T16:50:37.471215" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-10-29T16:50:37.465373" elapsed="0.005994"/>
+</kw>
+<status status="PASS" start="2026-10-29T16:50:37.464858" elapsed="0.006645"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-29T16:50:39.472774" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-29T16:50:37.471935" elapsed="2.001045"/>
+</kw>
+<kw name="Close my browsers" owner="LoginKeywords">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-10-29T16:50:39.473555" elapsed="2.198024"/>
+</kw>
+<status status="PASS" start="2026-10-29T16:50:39.473317" elapsed="2.198397"/>
+</kw>
+<status status="PASS" start="2026-10-29T16:50:29.631363" elapsed="12.040598"/>
 </test>
-<test id="s1-t2" name="TC2 LoginTest" line="15">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>Log in to application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.392029" elapsed="0.000356"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>This is login test</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.392571" elapsed="0.000239"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Login Test is over</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.392937" elapsed="0.000259"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>Log out form application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.393398" elapsed="0.000209"/>
-</kw>
-<tag>regression</tag>
-<status status="PASS" start="2026-10-21T15:23:13.391599" elapsed="0.002076"/>
-</test>
-<test id="s1-t3" name="TC3 Chage User setting" line="20">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>Log in to application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.394372" elapsed="0.000211"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>This is user changing test case</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.394714" elapsed="0.000214"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Changing user test is over</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.395049" elapsed="0.000194"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>Log out form application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.395408" elapsed="0.000185"/>
-</kw>
-<tag>Regression</tag>
-<status status="PASS" start="2026-10-21T15:23:13.394027" elapsed="0.001629"/>
-</test>
-<test id="s1-t4" name="TC4 Logout Test" line="25">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>Log in to application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.396275" elapsed="0.000301"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>This is logout test</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.396815" elapsed="0.000356"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Logout test is finished</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.397365" elapsed="0.000240"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>Log out form application</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.397822" elapsed="0.000307"/>
-</kw>
-<tag>Sanity</tag>
-<status status="PASS" start="2026-10-21T15:23:13.396001" elapsed="0.002291"/>
-</test>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>Close All Browsers</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-10-21T15:23:13.399183" elapsed="0.000454"/>
-</kw>
-<status status="PASS" start="2026-10-21T15:23:13.354167" elapsed="0.045544"/>
+<status status="PASS" start="2026-10-29T16:50:29.344378" elapsed="12.328011"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">regression</stat>
-<stat pass="2" fail="0" skip="0">Sanity</stat>
 </tag>
 <suite>
-<stat name="Tagging" id="s1" pass="4" fail="0" skip="0">Tagging</stat>
+<stat name="POMLoginTest" id="s1" pass="1" fail="0" skip="0">POMLoginTest</stat>
 </suite>
 </statistics>
 <errors>

@@ -3,18 +3,14 @@ Library    SeleniumLibrary
 
 Variables   ../PageObjects/Locators.py
 
-
-*** Test Cases ***
-
-
-
 *** Keywords ***
 Open My Browsers
         [Arguments]     ${SiteURL}      ${Browser}
         Open Browser    ${SiteURL}      ${Browser}  
         Maximize browser window
 Enter Username
-       [Arguments]      ${username}     
+       [Arguments]      ${username}          
+       Wait Until Element Is Visible    ${txt_Username}    
        Input text      ${txt_Username}   ${username}    
 Enter Password  
        [Arguments]      ${password}     
