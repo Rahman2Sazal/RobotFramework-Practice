@@ -12,7 +12,8 @@ ${url}          https://opensource-demo.orangehrmlive.com/web/index.php/auth/log
 
 *** Test Cases ***
 LoginTest
-    Open Browser     ${url}        ${browser}          
+    Open Browser     ${url}        ${browser}      
+    Wait Until Element Is Visible    name:username
     Sleep    10s
     LogInToApplication
     Sleep    5s

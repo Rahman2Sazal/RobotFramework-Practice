@@ -1,0 +1,1 @@
+C:\Users\Administrator\PycharmProjects\RobotPractice> robot Practice\lo*.robot        
