@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.5 (Python 3.14.7 on win32)" generated="2026-11-01T19:41:14.385666" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="InputText" source="C:\Users\Administrator\PycharmProjects\RobotPractice\ParallalProcessing\InputText.robot">
+<test id="s1-s1-t1" name="LoginTest" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:39.661189" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-01T19:40:39.660849" elapsed="4.682494"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-11-01T19:40:44.343836" elapsed="0.054234"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:40:54.400233" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:44.398497" elapsed="10.002143"/>
+</kw>
+<kw name="LogInToApplication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:54.414293" level="INFO">Typing text 'Admin' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:40:54.403267" elapsed="0.329410"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:54.733469" level="INFO">Typing text 'admin123' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:40:54.733022" elapsed="0.567605"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:41:00.303927" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:55.300975" elapsed="5.003144"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:41:00.304913" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:41:00.304458" elapsed="0.963236"/>
+</kw>
+<status status="PASS" start="2026-11-01T19:40:54.401952" elapsed="6.865972"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:41:01.277611" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-11-01T19:41:01.268178" elapsed="0.010612"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:41:06.281130" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:41:01.279838" elapsed="5.001437"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:41:06.281789" level="INFO">Clicking link 'xpath:/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a'.</msg>
+<arg>xpath:/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:41:06.281498" elapsed="0.537741"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:41:11.820391" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:41:06.819542" elapsed="5.001004"/>
+</kw>
+<status status="PASS" start="2026-11-01T19:40:39.659665" elapsed="32.161143"/>
+</test>
+<status status="PASS" start="2026-11-01T19:40:38.996000" elapsed="32.161000"/>
+</suite>
+<suite id="s1-s2" name="Login" source="C:\Users\Administrator\PycharmProjects\RobotPractice\ParallalProcessing\Login.robot">
+<test id="s1-s2-t1" name="LoginTest" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:39.666051" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-01T19:40:39.665648" elapsed="5.101643"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name:username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-01T19:40:44.768948" elapsed="0.629268"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:40:55.400239" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:45.398562" elapsed="10.001890"/>
+</kw>
+<kw name="LogInToApplication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:55.404004" level="INFO">Typing text 'Admin' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:40:55.401839" elapsed="0.619164"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:56.021765" level="INFO">Typing text 'admin123' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:40:56.021337" elapsed="0.966788"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:41:01.989755" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:56.988581" elapsed="5.001383"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:41:01.991207" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:41:01.990438" elapsed="0.929260"/>
+</kw>
+<status status="PASS" start="2026-11-01T19:40:55.400973" elapsed="7.518976"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:41:07.921205" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:41:02.920227" elapsed="5.001389"/>
+</kw>
+<status status="PASS" start="2026-11-01T19:40:39.663872" elapsed="28.258082"/>
+</test>
+<status status="PASS" start="2026-11-01T19:40:38.993854" elapsed="28.928880"/>
+</suite>
+<suite id="s1-s3" name="MouseOperation" source="C:\Users\Administrator\PycharmProjects\RobotPractice\ParallalProcessing\MouseOperation.robot">
+<test id="s1-s3-t1" name="MouseActions" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:39.657842" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-01T19:40:39.655783" elapsed="4.110720"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-11-01T19:40:43.766997" elapsed="0.198930"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:40:46.967256" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:43.966336" elapsed="3.001282"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath=/html/body/main/p/span</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:40:46.968097" elapsed="0.330819"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:40:50.300247" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:47.299268" elapsed="3.001129"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:50.300729" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-11-01T19:40:50.300580" elapsed="2.561666"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:40:55.865445" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:52.862631" elapsed="3.003125"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-01T19:40:55.867582" level="INFO">Double clicking element 'xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button'.</msg>
+<arg>xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-01T19:40:55.866624" elapsed="0.488924"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[8]/div[1]/div[1]/p</arg>
+<arg>//*[@id="droppable"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-11-01T19:40:56.355863" elapsed="1.079823"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-11-01T19:41:00.437899" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-11-01T19:40:57.436218" elapsed="3.001999"/>
+</kw>
+<status status="PASS" start="2026-11-01T19:40:39.654583" elapsed="20.785414"/>
+</test>
+<status status="PASS" start="2026-11-01T19:40:38.984443" elapsed="21.458453"/>
+</suite>
+<status status="PASS" start="2026-11-01T19:40:38.909000" elapsed="32.166000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="3" fail="0" skip="0">Suites</stat>
+<stat name="InputText" id="s1-s1" pass="1" fail="0" skip="0">Suites.InputText</stat>
+<stat name="Login" id="s1-s2" pass="1" fail="0" skip="0">Suites.Login</stat>
+<stat name="MouseOperation" id="s1-s3" pass="1" fail="0" skip="0">Suites.MouseOperation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

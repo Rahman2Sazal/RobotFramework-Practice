@@ -1,0 +1,19 @@
+--name Suites
+--suite Suites.Login
+--variable CALLER_ID:5f4a30e6efa34faa85327698830526d3
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:3
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Suites.Login
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\1
+--consolecolors off
+--consolemarkers off
+InputText.robot
+Login.robot
+MouseOperation.robot

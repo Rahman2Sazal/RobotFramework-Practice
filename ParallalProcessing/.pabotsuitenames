@@ -1,0 +1,7 @@
+datasources:2f5b4673981f5d4ebbde8f60adde220773a75586
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:0f102e5a39906751ba384ced4b13c6f25a5226ee
+--suite Suites.InputText
+--suite Suites.Login
+--suite Suites.MouseOperation

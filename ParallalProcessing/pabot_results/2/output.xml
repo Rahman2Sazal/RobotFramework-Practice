@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-31T21:10:04.582705" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="MouseOperation" source="C:\Users\Administrator\PycharmProjects\RobotPractice\ParallalProcessing\MouseOperation.robot">
+<test id="s1-s1-t1" name="MouseActions" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:05.498652" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-31T21:10:05.496519" elapsed="3.895098"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-31T21:10:09.392072" elapsed="0.040055"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:12.433819" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:09.432489" elapsed="3.001623"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath=/html/body/main/p/span</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-31T21:10:12.434443" elapsed="0.312554"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:15.747987" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:12.747293" elapsed="3.000864"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:15.748606" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-10-31T21:10:15.748411" elapsed="1.590166"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:20.339698" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:17.338928" elapsed="3.000960"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:20.340710" level="INFO">Double clicking element 'xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button'.</msg>
+<arg>xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-31T21:10:20.340149" elapsed="0.445454"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[8]/div[1]/div[1]/p</arg>
+<arg>//*[@id="droppable"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-10-31T21:10:20.785937" elapsed="0.675049"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:24.462138" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:21.461348" elapsed="3.000964"/>
+</kw>
+<status status="PASS" start="2026-10-31T21:10:05.494959" elapsed="18.967646"/>
+</test>
+<status status="PASS" start="2026-10-31T21:10:04.658691" elapsed="19.805907"/>
+</suite>
+<status status="PASS" start="2026-10-31T21:10:04.586311" elapsed="19.879631"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="MouseOperation" id="s1-s1" pass="1" fail="0" skip="0">Suites.MouseOperation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

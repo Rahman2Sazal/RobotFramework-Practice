@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-31T21:10:04.581212" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Login" source="C:\Users\Administrator\PycharmProjects\RobotPractice\ParallalProcessing\Login.robot">
+<test id="s1-s1-t1" name="LoginTest" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:05.500621" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-31T21:10:05.500164" elapsed="3.183279"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name:username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-31T21:10:08.683920" elapsed="0.619633"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:19.305824" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:09.303954" elapsed="10.002072"/>
+</kw>
+<kw name="LogInToApplication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:19.307421" level="INFO">Typing text 'Admin' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-31T21:10:19.307024" elapsed="0.161789"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:19.470513" level="INFO">Typing text 'admin123' into text field 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-31T21:10:19.469160" elapsed="0.130360"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:24.601565" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:19.599892" elapsed="5.002362"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-31T21:10:24.603896" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath:/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-31T21:10:24.602924" elapsed="0.127120"/>
+</kw>
+<status status="PASS" start="2026-10-31T21:10:19.306466" elapsed="5.423844"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-31T21:10:29.731703" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-31T21:10:24.730662" elapsed="5.001177"/>
+</kw>
+<status status="PASS" start="2026-10-31T21:10:05.498708" elapsed="24.233337"/>
+</test>
+<status status="PASS" start="2026-10-31T21:10:04.652868" elapsed="25.079762"/>
+</suite>
+<status status="PASS" start="2026-10-31T21:10:04.583303" elapsed="25.149924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Login" id="s1-s1" pass="1" fail="0" skip="0">Suites.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

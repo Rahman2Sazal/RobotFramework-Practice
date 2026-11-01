@@ -1,0 +1,19 @@
+--name Suites
+--suite Suites.InputText
+--variable CALLER_ID:cfa8784e1d284329aafb8aa8275d9a80
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:3
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:Suites.InputText
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\0
+--consolecolors off
+--consolemarkers off
+ParallalProcessing\InputText.robot
+ParallalProcessing\Login.robot
+ParallalProcessing\MouseOperation.robot
